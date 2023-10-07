@@ -1,30 +1,49 @@
+/* .header {
+    display:flex;
+    padding:10%
+} */
+
+
 .header-logo {
     display:flex;
     justify-content: space-around;
-    max-width: 100%;
-    height: auto;
     /* overflow: hidden;
     object-fit:contain */
 }
 
-.header-logo img {
+.header-container img {
     max-width: 6%;
     max-height: 75px;
     border-radius: 50px;
+    /* display:flex; */
     /* background-size: contain;
     background-repeat: no-repeat;
     background-position: center; */
 
 }
 
+/* This container holds the image and links */
 .header-container {
     display:flex;
     justify-content: space-around;
+    gap: 15px;
+    margin:0;
+    padding:auto;
+    background-color:peachpuff;
+    flex-direction:row;
+
     /* flex-direction: row;
     flex-wrap: wrap; */
 }
 
 
+.middle-container {
+    display:flex;
+    justify-content: center;
+    padding:10%;
+    flex-direction: column;
+    background-color:chartreuse
+}
 /* img {
     display:flex;
     max-width:100%;
