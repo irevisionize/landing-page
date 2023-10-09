@@ -3,19 +3,38 @@
     padding:10%
 } */
 
-/* * {
+body {
     background-color: black;
-} */
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    border-color:black;
-    padding:0px;
-    background: rgb(33, 33, 33);
-    background: linear-gradient(to bottom, grey black);
-    color:yellow;
+    z-index: 0;
 }
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* The rest of your styles */
+.header {
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    /* ... other styles */
+}
+
 
 .header-logo img {
     max-width: 75%;
@@ -52,6 +71,7 @@ iframe {
     color: gold;
     flex-direction: row;
     gap: 15px;
+    background-color: rgba(0, 0, 0, 0.5);  
     
 }
 
@@ -111,7 +131,7 @@ iframe {
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color:rgb(56, 56, 56);
+    background-color: rgba(0, 0, 0, 0.5);  
     /* padding: 125px; */
 
 
