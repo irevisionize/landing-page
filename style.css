@@ -137,8 +137,20 @@ iframe {
 
 }
 
-/* .interests-container p {
+
+.inspiration {
+    display:flex 1;
+    padding: 10%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    /* justify-content: center; */
+}
+
+
+.quote-container {
     display:flex;
     justify-content: center;
     align-items: center;
-} */
+    color: gold;
+    font-size: 20px;
+
+}
