@@ -6,7 +6,7 @@ body {
 }
 
 .video-container {
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,15 +21,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
 }
 
-/* The rest of your styles */
+
 .header {
     display:flex;
     justify-content: space-between;
     position: relative;
     z-index: 1;
-    /* ... other styles */
 }
 
 
@@ -38,67 +38,61 @@ body {
     max-height: 90px;
     border-radius: 50px;
     display:flex;
+
 }
 
 iframe {
     border-radius: 15px;
-    border-color:rgb(56, 56, 56);
+    border-color:rgba(0, 0, 0, 0.5);
     box-shadow: 0;
 }
 
 /* This container holds the image and links */
 .header-container ul {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 40px;
     margin: 0;
     padding: 15px;
  /*this will change top header*/
     flex-wrap: wrap;
+
 }
 
 
 .middle-container {
     display: flex;
-    justify-content: center; /* Aligns children to the center */
+    justify-content: center;
     align-items: center;
     padding: 12%;
     background: black;
-    color: red;
+    color:red;
     flex-direction: row;
     gap: 15px;
-    background-color: rgba(0, 0, 0, 0.5);  
+    background-color: rgba(0, 0, 0, 0.0);  
     
 }
 
-/* This will put a border around "i begin with nothing etc" */
+
 .text-border-wrapper {
     border: 5px solid rgb(56, 56, 56);
     padding: 50px;
-    border-radius: 50px;
-    width: 45%;
+    border-radius: 15px;
+    width: 50%;
     height:auto;
     border-style:unset;
+    background:linear-gradient(rgba(0, 0, 0, 0.0), black, black, black, rgba(0,0,0,0.0))
 }
 
 
 .middle-container button {
     background-color: black;
     border-style: ridge;
-    border-color: white;
+    border-color: red;
     padding: 5px;
     margin: 5px;
 }
 
-/* 
-.rainbow-odin iframe {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    max-width: 500px;
-    max-height: 300px;
-} */
 
 .middle-container p {
     font-size: 20px;
@@ -142,7 +136,6 @@ iframe {
     display:flex 1;
     padding: 10%;
     background-color:rgba(0, 0, 0, 0.5) ;
-    /* justify-content: center; */
 }
 
 
@@ -152,15 +145,12 @@ iframe {
     align-items: center;
     color: black;
     font-size: 20px;
-    /* gap: 50px; */
-    /* background-color: deepskyblue; */
     background: linear-gradient(to left,  
 grey,
 red,
 grey,
 red);
     border-radius: 85%;
-    /* border-bottom-left-radius: 50%; */
     border-start-end-radius: 70%;
     border-bottom-left-radius: 80%;
 
@@ -180,12 +170,12 @@ red);
     color:white;
     background: linear-gradient(to left,
     white,
-    /* grey, */
+
     red,
     black,
     black,
     black,
     red,
-    /* grey, */
+
     white);
 }
